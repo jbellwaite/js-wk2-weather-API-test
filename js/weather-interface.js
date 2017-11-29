@@ -13,7 +13,7 @@ $(document).ready(function() {
         $('.showHumidity').text(`The humidity in ${city} is ${response.main.humidity}%`);
         $('.showTemp').text(`The temperature in Kelvins is ${response.main.temp}.`);
       },
-      error: function(response) {
+      error: function(error) {
         $('.errors').text("There was an error processing your request. Please try again.")
       }
     });
